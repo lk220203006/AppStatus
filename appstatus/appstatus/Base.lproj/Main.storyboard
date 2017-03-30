@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,8 +23,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5Q-L5-9Ib">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <mutableString key="text">第一次点击icon启动APP，调用顺序
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                <string key="text">第一次点击icon启动APP，调用顺序
 -[willFinishLaunchingWithOptions:]
 -[didFinishLaunchingWithOptions:]
 -[ViewController viewWillAppear:]
@@ -36,18 +37,31 @@
 
 再次恢复APP
 -[applicationWillEnterForeground:]
--[applicationDidBecomeActive:] </mutableString>
+-[applicationDidBecomeActive:] </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkk-Nq-HA6">
+                                <rect key="frame" x="10" y="344" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WC1-BO-7tb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVC-PR-dT1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="y5Q-L5-9Ib" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BBo-E3-LJI"/>
                             <constraint firstItem="y5Q-L5-9Ib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SEd-aF-sqa"/>
                             <constraint firstAttribute="trailing" secondItem="y5Q-L5-9Ib" secondAttribute="trailing" id="SMs-MX-FPF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y5Q-L5-9Ib" secondAttribute="bottom" id="cUW-O2-1x9"/>
+                            <constraint firstItem="mkk-Nq-HA6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="byG-YC-D80"/>
+                            <constraint firstItem="y5Q-L5-9Ib" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" constant="1" id="cvd-lU-SLi"/>
+                            <constraint firstAttribute="trailing" secondItem="mkk-Nq-HA6" secondAttribute="trailing" constant="10" id="eE0-Oy-ldp"/>
+                            <constraint firstItem="mkk-Nq-HA6" firstAttribute="top" secondItem="y5Q-L5-9Ib" secondAttribute="bottom" constant="10" id="tm7-3a-Oo3"/>
                         </constraints>
                     </view>
                 </viewController>

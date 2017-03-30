@@ -13,6 +13,8 @@
 		043F56B21E824C520003749A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043F56B01E824C520003749A /* Main.storyboard */; };
 		043F56B41E824C520003749A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043F56B31E824C520003749A /* Assets.xcassets */; };
 		043F56B71E824C520003749A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043F56B51E824C520003749A /* LaunchScreen.storyboard */; };
+		043F56C01E850C5B0003749A /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F56BF1E850C5B0003749A /* Singleton.m */; };
+		04496F511E86079500E0CF42 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04496F501E86079500E0CF42 /* MyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		043F56B31E824C520003749A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043F56B61E824C520003749A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043F56B81E824C520003749A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043F56BE1E850C5B0003749A /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		043F56BF1E850C5B0003749A /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		04496F4F1E86079500E0CF42 /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		04496F501E86079500E0CF42 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				043F56AB1E824C520003749A /* AppDelegate.m */,
 				043F56AD1E824C520003749A /* ViewController.h */,
 				043F56AE1E824C520003749A /* ViewController.m */,
+				043F56BE1E850C5B0003749A /* Singleton.h */,
+				043F56BF1E850C5B0003749A /* Singleton.m */,
+				04496F4F1E86079500E0CF42 /* MyObject.h */,
+				04496F501E86079500E0CF42 /* MyObject.m */,
 				043F56B01E824C520003749A /* Main.storyboard */,
 				043F56B31E824C520003749A /* Assets.xcassets */,
 				043F56B51E824C520003749A /* LaunchScreen.storyboard */,
@@ -152,8 +162,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				043F56AF1E824C520003749A /* ViewController.m in Sources */,
+				043F56C01E850C5B0003749A /* Singleton.m in Sources */,
 				043F56AC1E824C520003749A /* AppDelegate.m in Sources */,
 				043F56A91E824C520003749A /* main.m in Sources */,
+				04496F511E86079500E0CF42 /* MyObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +322,7 @@
 				043F56BD1E824C520003749A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
